@@ -1,4 +1,4 @@
-module bitbucket.org/rafael_shamilov/packages_metadata
+module github.com/releaseband/packages_metadata
 
 go 1.18
 

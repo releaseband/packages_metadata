@@ -6,16 +6,12 @@ import (
 	"strings"
 )
 
-// Интерфейс сервиса метаданных используемых пакетов в приложении
+// Интерфейс библиотеку получения метаданных используемых пакетов в приложении
 type PackagesMetadata interface {
 	// Получение версии для конкретного пакета
 	GetVersion(name string) string
 	// Получение списка сервисов и их версий
 	GetMap() map[string]string
-}
-
-type FileOpener interface {
-	Open(string) (io.ReadCloser, error)
 }
 
 // Таблица метаданных пакетов
